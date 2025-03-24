@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<SCH>
+    <ZGLV>
+        <VERSION>1.2</VERSION>
+    </ZGLV>
+    <SCH_DATA>
+        <NSCHET>1649</NSCHET>
+        <MONTH>07</MONTH>
+        <YEAR>2024</YEAR>
+        <DSCHET>2024-07-29</DSCHET>
+        <FILE_NAME>DOM290104S29030_2407180</FILE_NAME>
+        <IFIN/>
+        <SUMMAV>61938.82</SUMMAV>
+        <RUK>Павельев Дмитрий Валерьевич</RUK>
+        <BUH>Вавичева Анна Александровна</BUH>
+    </SCH_DATA>
+    <POST>
+        <NAM_MOP>ГБУЗ АГКБ №7</NAM_MOP>
+        <MCOD>290104</MCOD>
+        <INN>2901056972</INN>
+        <KPP>290101001</KPP>
+        <OKVED>85.11</OKVED>
+        <OKPO>31297152</OKPO>
+        <BANK_NAME>отделение по Архангельской области Северо-Западного главного управления Центрального банка Российской Федерации</BANK_NAME>
+        <RASCH_SCH>03224643110000002400</RASCH_SCH>
+        <BIK>041117001</BIK>
+        <LIC_SCH>22246У65190</LIC_SCH>
+        <ADDR_J>163013, г. Архангельск, ул. Ярославская 42</ADDR_J>
+    </POST>
+    <PLAT>
+        <NAME>Архангельский филиал АО "Страховая компания "СОГАЗ - Мед"</NAME>
+        <COD>29030</COD>
+        <INN>7728170427</INN>
+        <KPP>290102002</KPP>
+        <OKVED>65.12.9</OKVED>
+        <OKPO>18426426</OKPO>
+        <BANK_NAME>Ф.ОПЕРУ БАНКА ВТБ (ПАО) В САНКТ-ПЕТЕРБУРГЕ</BANK_NAME>
+        <RASCH_SCH>40701810989800000002</RASCH_SCH>
+        <BIK>044030704</BIK>
+        <ADDR_J>Россия, 191124 г. Санкт-Петербург, ул. Пролетарской диктатуры, д. 3, литера А</ADDR_J>
+    </PLAT>
+    <POL>
+        <NAM_MOP>ГБУЗ АГКБ №7</NAM_MOP>
+        <MCOD>290104</MCOD>
+        <INN>2901056972</INN>
+        <KPP>290101001</KPP>
+        <OKVED>85.11</OKVED>
+        <OKPO>31297152</OKPO>
+        <BANK_NAME>отделение по Архангельской области Северо-Западного главного управления Центрального банка Российской Федерации</BANK_NAME>
+        <RASCH_SCH>03224643110000002400</RASCH_SCH>
+        <BIK>041117001</BIK>
+        <LIC_SCH>22246У65190</LIC_SCH>
+        <ADDR_J>163013, г. Архангельск, ул. Ярославская 42</ADDR_J>
+    </POL>
+</SCH>

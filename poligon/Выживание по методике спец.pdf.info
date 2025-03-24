@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bookStorage xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://www.rock-chips.com">
+    <book>
+        <id>3008984659</id>
+        <timestamp>3665375788</timestamp>
+        <fileName>Выживание по методике спец.pdf</fileName>
+        <localPath>D:\scientific pop\</localPath>
+        <thumbnail>D:\Digital Editions\Thumbnails\D\scientific pop\Выживание по методике спец.pdf.png</thumbnail>
+        <bookMark>D:\Digital Editions\Annotations\D\scientific pop\Выживание по методике спец.pdf.annot</bookMark>
+        <pageCount>282</pageCount>
+        <rating>0</rating>
+        <readTimes>3</readTimes>
+    </book>
+</bookStorage>
