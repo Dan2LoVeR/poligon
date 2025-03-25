@@ -1,5 +1,3 @@
-import numpy as np
-import matplotlib as ml
 import random
 
 mas = [0]*5
