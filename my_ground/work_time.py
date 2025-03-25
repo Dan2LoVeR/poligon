@@ -4,7 +4,7 @@ from datetime import datetime
 import numpy as np
 
 now_day = datetime.today() #сегодняшняя дата
-start_day = datetime.strptime('2024-08-12', '%Y-%m-%d') #дата начала работы
+start_day = datetime.strptime('2025-03-13', '%Y-%m-%d') #дата начала работы
 work_day = int((now_day-start_day).days)
 print('/'*work_day,'-'*(366-work_day))
 
