@@ -10,22 +10,22 @@ documents_path = main_path / 'Documents'
 print(type(test_file.suffix))
 
 class Files:
-    def __init__(self, suffix: str):
-        self.suffix = suffix
+    def __init__(self, suffixes: str):
+        self.suffixes = suffixes
 
     async def start_clean(self):
-        for file in downloads_path.rglob(f"*.{self.suffix}"):
-            print(file)
+        for suffix in self.suffixes:
+            for file in downloads_path.rglob(f"*.{suffix}"):
+
+                print(f'Found {suffix} file: {file.name}')
 
 async def main():
 
     file_forms = {
         'doc': {'docx', 'pdf'},
-        'table':'xlsx'
+        'table': {'xlsx'}
     }
-    cleaners = [Files(fmt).start_clean() for fmt in file_forms]
-    print(type(cleaners))
-    print(cleaners)
+    cleaners = [Files(suffixes).start_clean() for suffixes in file_forms.values()]
     await asyncio.gather(*cleaners)
 
     print(')')
