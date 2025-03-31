@@ -6,7 +6,7 @@ import numpy as np
 now_day = datetime.today() #сегодняшняя дата
 start_day = datetime.strptime('2025-03-13', '%Y-%m-%d') #дата начала работы
 work_day = int((now_day-start_day).days)
-print('/'*work_day,'-'*(366-work_day))
+print(np.busday_count(start_day, now_day.strftime('%Y-%m-%d')))
 
 plt.style.use('cyberpunk')
 ax = plt.subplot()
