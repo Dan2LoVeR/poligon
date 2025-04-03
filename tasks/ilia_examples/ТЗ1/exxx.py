@@ -1,8 +1,8 @@
-import re
-from collections import defaultdict
 
 # Импорт модуля re для работы с регулярными выражениями
 # Импорт defaultdict из модуля collections для создания словарей со значениями по умолчанию
+
+import re
 
 # Загрузка данных из файла
 with open('tz1_data.txt', 'r', encoding='utf-8') as f:

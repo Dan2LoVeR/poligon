@@ -4,28 +4,27 @@ import asyncio
 
 main_path = Path('C:/Users/d.valov')
 
-test_file = Path('C:/Users/d.valov/Downloads/Калькулятор_ЗП омс.xlsx')
 downloads_path = main_path / 'Downloads'
 documents_path = main_path / 'Documents'
-print(type(test_file.suffix))
 
 class Files:
-    def __init__(self, suffixes: str):
+    def __init__(self, category: str, suffixes: str):
+        self.category = category
         self.suffixes = suffixes
 
     async def start_clean(self):
         for suffix in self.suffixes:
             for file in downloads_path.rglob(f"*.{suffix}"):
-
-                print(f'Found {suffix} file: {file.name}')
+                shutil.move(file.absolute(), documents_path / self.category)
+                print(f'Found {self.category}  file: {file.absolute()}')
 
 async def main():
 
     file_forms = {
-        'doc': {'docx', 'pdf'},
-        'table': {'xlsx'}
+        'docs': {'docx', 'pdf'},
+        'tables': {'xlsx', 'xls'}
     }
-    cleaners = [Files(suffixes).start_clean() for suffixes in file_forms.values()]
+    cleaners = [Files(category, suffixes).start_clean() for category, suffixes in file_forms.items()]
     await asyncio.gather(*cleaners)
 
     print(')')

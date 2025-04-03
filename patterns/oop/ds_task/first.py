@@ -20,9 +20,11 @@ async def main():
     }
 
     bears_party = [Bear(country, color).dance() for color, country in bear_list.items()]
+    bears_dead = [Bear(country, color).hug() for color, country in bear_list.items()]
     
 
     await asyncio.gather(*bears_party)
+    await asyncio.gather(*bears_dead)
 
 
 if __name__ == "__main__":

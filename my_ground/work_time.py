@@ -5,8 +5,8 @@ import numpy as np
 
 now_day = datetime.today() #сегодняшняя дата
 start_day = datetime.strptime('2025-03-13', '%Y-%m-%d') #дата начала работы
-work_day = int((now_day-start_day).days)
-print(np.busday_count(start_day, now_day.strftime('%Y-%m-%d')))
+work_day = np.busday_count(start_day.strftime('%Y-%m-%d'), now_day.strftime('%Y-%m-%d'))
+print(work_day)
 
 plt.style.use('cyberpunk')
 ax = plt.subplot()
